@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import SpesschTT from './contener/SpesschTT';
+import TextTS from './contener/TextTS';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div  className="container">
+        <div class="row">
+          <div class="col-5">
+            <SpesschTT/>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-6">
+            <TextTS/>
+          </div>
+        </div>
+      </div>
+    </body>
   );
 }
-
+        
 export default App;
