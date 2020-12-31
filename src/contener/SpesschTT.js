@@ -62,7 +62,6 @@ function SpesschTT() {
             <label htmlFor="language">Language</label>
             <select
               form="speech-recognition-form"
-              id="language"
               value={lang}
               onChange={changeLang}
             >
@@ -74,11 +73,10 @@ function SpesschTT() {
             </select>
             <label htmlFor="transcript">Transcript</label>
             <textarea
-              id="transcript"
               name="transcript"
               placeholder="Waiting to take notes ..."
               value={value}
-              rows={3}
+              rows={6}
               disabled
             />
             <button disabled={blocked} type="button" onClick={toggle}>
